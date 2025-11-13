@@ -27,6 +27,6 @@ jobs:
       # Run Lighthouse CI
       - name: Run Lighthouse CI
         env:
-          LHCI_GITHUB_APP_TOKEN: ${{ "66ir4gNKZOQ:94469816:OwmWTnze2kFEj"}}
+          LHCI_GITHUB_APP_TOKEN: ${{ 66ir4gNKZOQ:94469816:OwmWTnze2kFEj}}
 
 # # 66ir4gNKZOQ:94469816:OwmWTnze2kFEj
