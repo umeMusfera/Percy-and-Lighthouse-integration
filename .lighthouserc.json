@@ -3,7 +3,7 @@
     "collect": {
       "numberOfRuns": 3,
       "url": [
-        "https://thapas-technical.myshopify.com/?password=${STORE_PASSWORD}"
+        "https://thapas-technical.myshopify.com/"
       ],
       "settings": {
         "chromeFlags": "--no-sandbox --headless"
