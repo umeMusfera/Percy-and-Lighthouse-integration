@@ -28,3 +28,4 @@ jobs:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
           STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
         run: npx lhci autorun
+# L5OG6IaiLTIJj:94553161:vuJyeFUOvLs

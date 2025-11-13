@@ -31,7 +31,7 @@ jobs:
       # Step 5: Run Percy + Playwright tests
       - name: Run Percy Visual Tests
         env:
-          PERCY_TOKEN: ${{ secrets.web_f86032bed9b3ebb2e201b95ae818ebb7ecc05358c792992d9086c86cb6461a53}}
+          PERCY_TOKEN: ${{ secrets.web_6a87dd283c51c7b04fb29157169426f3aee612911c9c07c555a0ca85e71fa097}}
         run: npx percy exec -- npx playwright test
 
       # Step 6: Upload Playwright HTML report
