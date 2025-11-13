@@ -15,18 +15,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
 
       - name: Install dependencies
         run: npm ci
 
-      # Optional: If you have a build command
-      - name: Build project
-        run: npm run build
+      - name: Build project (optional)
+        run: npm run build || echo "No build step"
 
-      # Run Lighthouse CI
       - name: Run Lighthouse CI
         env:
-          LHCI_GITHUB_APP_TOKEN: ${{ 66ir4gNKZOQ:94469816:OwmWTnze2kFEj}}
-
-# # 66ir4gNKZOQ:94469816:OwmWTnze2kFEj
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
+        run: npx lhci autorun
